@@ -1,0 +1,19 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+#input{
+    color: #000000;
+    width: 100vh;
+    height: 100px;
+    display: flex;
+    text-align: start;
+    resize: none;
+}
