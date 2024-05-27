@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Hai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>
-        Hello world!
-    </h1>
-    <h1>Hello</h1>
+    <nav>
+        <h1>
+            TCO
+        </h1>
+    </nav>
     <form id="formInput">
         <textarea id="name" title="inputname" rows="40" cols="50" required></textarea>
+        <input id="inputFile" type="file" title="input file" accept=".txt">
+        <div id="the-chosen"></div>
         <button type="submit" id="submitInput">Chose</button>
+        <button type="reset" id="resetButton">Reset</button>
     </form>
-    <div id="the-chosen"></div>
+    <p id="demo">Click "Remove", and this paragraph will be removed from the DOM.</p>
+    <button onclick="myFunction()">Remove</button>
     <script src="index.js">
+        function myFunction() {
+            document.getElementById('demo').remove()
+        }
     </script>
 </body>
 
