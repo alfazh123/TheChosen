@@ -15,23 +15,23 @@
 
 <body>
     <nav>
-        <h1>
-            TCO
+        <h1 id="nameWeb">
+            T<span class="nameWeb">he </span>C<span class="nameWeb">hosen </span>O<span class="nameWeb">ne</span>
         </h1>
     </nav>
     <form id="formInput">
-        <textarea id="name" title="inputname" rows="40" cols="50" required></textarea>
-        <input id="inputFile" type="file" title="input file" accept=".txt">
+        <label for="inputname">List</label>
+        <textarea id="name" title="inputname" rows="20" cols="35" required></textarea>
+        <div id="buttonAction">
+            <input id="inputFile" type="file" title="input file" accept=".txt">
+            <div>
+                <button type="submit" id="submitInput">Chose</button>
+                <button type="reset" id="resetButton">Reset</button>
+            </div>
+        </div>
         <div id="the-chosen"></div>
-        <button type="submit" id="submitInput">Chose</button>
-        <button type="reset" id="resetButton">Reset</button>
     </form>
-    <p id="demo">Click "Remove", and this paragraph will be removed from the DOM.</p>
-    <button onclick="myFunction()">Remove</button>
     <script src="index.js">
-        function myFunction() {
-            document.getElementById('demo').remove()
-        }
     </script>
 </body>
 

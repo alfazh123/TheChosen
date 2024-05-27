@@ -5,14 +5,83 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: first baseline;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
     font-family: "Anton", sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 20px;
+    align-items: start;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+#nameWeb {
+    .nameWeb {
+        display: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+}
+
+#nameWeb:hover{
+    .nameWeb{
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+}
+
+label{
+    font-size: large;
+}
+
+#formInput {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+}
+
+#buttonAction{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+#submitInput{
+    background-color: #000000;
+    color: white;
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton{
+    background-color: red;
+    color: white;
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #input{
@@ -21,5 +90,22 @@ nav{
     height: 100px;
     display: flex;
     text-align: start;
-    resize: none;
+}
+
+textarea{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+}
+
+#the-chosen-one{
+    font-size: larger;
+}
+
+@media only screen and (maxwidth: 320px) {
+    #formInput {
+        width: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
 }

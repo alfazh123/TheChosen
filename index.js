@@ -1,5 +1,5 @@
 const container = document.getElementById("the-chosen");
-const theChosenOne = document.createElement("h3");
+const theChosenOne = document.createElement("p");
 
 function getInput() {
     const input = document.getElementById("name").value;
@@ -14,7 +14,7 @@ function getInput() {
     console.log(input);
 
     theChosenOne.id = "the-chosen-one";
-    theChosenOne.innerText = "the chosen One is " + textVar[randNumber];
+    theChosenOne.innerText = "The chosen One is " + textVar[randNumber];
 
     container.append(theChosenOne);
 }
